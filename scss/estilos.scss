@@ -20,14 +20,14 @@ nav.Colordefondodelmenu {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background: rgba(238, 238, 238, 0.511);
-    backdrop-filter: blur(4px);
+    background: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%);
     border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
     padding: 20px 10px;
+    min-height: 100px;
 
     .Logo {
         width: 120px;
