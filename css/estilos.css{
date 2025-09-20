@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Bad+Script&family=Fredericka+the+Great&display=swap");
-nav.colordefondodelmenu {
+nav.Colordefondodelmenu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,13 +12,13 @@ nav.colordefondodelmenu {
   padding: 20px 10px;
   min-height: 100px;
 }
-nav.colordefondodelmenu .logo {
+nav.Colordefondodelmenu .Logo {
   width: 120px;
   height: auto;
   max-width: 100%;
   position: static;
 }
-nav.colordefondodelmenu ul {
+nav.Colordefondodelmenu ul {
   list-style: none;
   flex-direction: row;
   gap: 100px;
@@ -26,12 +26,12 @@ nav.colordefondodelmenu ul {
   justify-content: flex-end;
   width: auto;
 }
-nav.colordefondodelmenu ul li {
+nav.Colordefondodelmenu ul li {
   color: rgb(0, 0, 0);
   text-decoration: none;
   font-size: 20px;
 }
-nav.colordefondodelmenu ul li a.menu {
+nav.Colordefondodelmenu ul li a.Menu {
   color: rgb(2, 2, 2);
   font-family: "Fredericka the Great", serif;
   font-size: x-large;
@@ -49,14 +49,14 @@ footer {
   flex-wrap: wrap;
 }
 
-main header div h3 {
-  text-align: center;
-  font-size: 1.5rem;
-}
-main header div h3 .tituloprincipal {
+header div.text-align h3 span.Tituloprincipal {
+  font-family: "Fredericka the Great", serif;
+  font-size: xx-large;
+  color: black;
   font-weight: bold;
-  font-size: 3rem;
-  color: #dc3668;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
 }
 
 body {
@@ -92,7 +92,7 @@ header div.container div.row div.col-md-3 div.card :before {
   background-color: rgba(0, 0, 0, 0.4);
   border-radius: 0.25rem;
 }
-header div.container div.row div.col-md-3 div.card div.card-body ul.unidadestiendaonline {
+header div.container div.row div.col-md-3 div.card div.card-body ul.Unidadestiendaonline {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -123,7 +123,7 @@ header div.container div.row div.col-md-4 div.card div.card-body h5.BOXES {
   text-align: center;
   margin-bottom: 0.5rem;
 }
-header div.container div.row div.col-md-4 div.card div.card-body ul.unidadestiendaonline {
+header div.container div.row div.col-md-4 div.card div.card-body ul.Unidadestiendaonline {
   list-style: none;
   display: flex;
   flex-direction: column;
@@ -137,13 +137,13 @@ main div.col div.card div.cardbody h5.subtitulos p.cardtextsobrenosotros {
   font-size: 1.2rem;
 }
 
-.titulos {
+.Titulos {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
 }
 
-.subtitulos {
+.Subtitulos {
   font-family: "Fredericka the Great", serif;
   font-size: larger;
   color: black;
@@ -151,125 +151,44 @@ main div.col div.card div.cardbody h5.subtitulos p.cardtextsobrenosotros {
 }
 
 /*Index*/
-main div.tab-content div.tab-pane section.imagenesinicio {
+main div.tab-content div.tab-pane section.Imagenesinicio {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: min-content;
   gap: 20px;
   padding: 20px;
+  justify-content: center;
+  align-items: start;
   max-width: 1200px;
   margin: 0 auto;
-  grid-template-areas: "rolls macarrons" "cafe croasaint" "eclair tartas";
+  box-sizing: border-box;
 }
-main div.tab-content div.tab-pane section.imagenesinicio img {
+main div.tab-content div.tab-pane section.Imagenesinicio img {
   width: 100%;
   height: 550px;
   object-fit: cover;
+  display: block;
   border-radius: 20px;
-  transition: transform 0.3s ease;
 }
-main div.tab-content div.tab-pane section.imagenesinicio img:hover {
-  transform: scale(1.05);
+main div.tab-content div.tab-pane section.Imagenesinicio img .Rolls {
+  grid-area: Rolls;
 }
-main div.tab-content div.tab-pane section.imagenesinicio .Rolls {
-  grid-area: rolls;
+main div.tab-content div.tab-pane section.Imagenesinicio img .Macarrons {
+  grid-area: Macarrons;
 }
-main div.tab-content div.tab-pane section.imagenesinicio .macarrons {
-  grid-area: macarrons;
+main div.tab-content div.tab-pane section.Imagenesinicio img .Cafe {
+  grid-area: Cafe;
 }
-main div.tab-content div.tab-pane section.imagenesinicio .cafe {
-  grid-area: cafe;
+main div.tab-content div.tab-pane section.Imagenesinicio img .Croasaint {
+  grid-area: Croasaint;
 }
-main div.tab-content div.tab-pane section.imagenesinicio .croasaint {
-  grid-area: croasaint;
+main div.tab-content div.tab-pane section.Imagenesinicio img .Eclair {
+  grid-area: Eclair;
 }
-main div.tab-content div.tab-pane section.imagenesinicio .eclair {
-  grid-area: eclair;
-}
-main div.tab-content div.tab-pane section.imagenesinicio .tartas {
-  grid-area: tartas;
+main div.tab-content div.tab-pane section.Imagenesinicio img .Tartas {
+  grid-area: Tartas;
 }
 
-.animacion {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100vh;
-  overflow: hidden;
-  pointer-events: none;
-  z-index: 10;
-}
-.animacion .dona {
-  position: absolute;
-  width: 80px;
-  height: auto;
-  top: -150px;
-  animation: bajar 12s linear infinite;
-}
-.animacion .dona.izquierda {
-  left: 20px;
-}
-.animacion .dona.derecha {
-  right: 20px;
-}
-.animacion .dona1 {
-  animation-delay: 0s;
-}
-.animacion .dona2 {
-  animation-delay: 1s;
-}
-.animacion .dona3 {
-  animation-delay: 2s;
-}
-.animacion .dona4 {
-  animation-delay: 3s;
-}
-.animacion .dona5 {
-  animation-delay: 4s;
-}
-.animacion .dona6 {
-  animation-delay: 5s;
-}
-.animacion .dona7 {
-  animation-delay: 6s;
-}
-.animacion .dona8 {
-  animation-delay: 7s;
-}
-.animacion .dona9 {
-  animation-delay: 0.5s;
-}
-.animacion .dona10 {
-  animation-delay: 1.5s;
-}
-.animacion .dona11 {
-  animation-delay: 2.5s;
-}
-.animacion .dona12 {
-  animation-delay: 3.5s;
-}
-.animacion .dona13 {
-  animation-delay: 4.5s;
-}
-.animacion .dona14 {
-  animation-delay: 5.5s;
-}
-.animacion .dona15 {
-  animation-delay: 6.5s;
-}
-.animacion .dona16 {
-  animation-delay: 7.5s;
-}
-
-@keyframes bajar {
-  0% {
-    transform: translateY(-100%);
-  }
-  100% {
-    transform: translateY(120vh);
-  }
-}
 /*Index*/
 .botonenviar, .botonenviar2 {
   border-radius: 2px;
@@ -305,8 +224,7 @@ textarea:focus::placeholder {
 }
 
 textarea {
-  width: 100%;
-  max-width: 100%;
+  width: 400px;
   height: 120px;
   padding: 10px;
   box-sizing: border-box;
@@ -364,44 +282,46 @@ main .card {
 }
 
 @media (max-width: 1576px) {
-  main div.tab-content div.tab-pane section.imagenesinicio {
+  main div.tab-content div.tab-pane section.Imagenesinicio {
     max-width: 800px;
   }
-  main div.tab-content div.tab-pane section.imagenesinicio img {
+  main div.tab-content div.tab-pane section.Imagenesinicio img {
     height: 350px;
   }
 }
 @media (max-width: 1200px) {
-  nav.colordefondodelmenu {
+  nav.Colordefondodelmenu {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
 }
 @media (max-width: 992px) {
-  nav.colordefondodelmenu {
+  nav.Colordefondodelmenu {
     flex-direction: column;
     align-items: center;
     padding: 20px;
   }
-  nav.colordefondodelmenu ul {
+  nav.Colordefondodelmenu ul {
     flex-direction: column;
     gap: 10px;
     align-items: center;
     padding-left: 0;
   }
-  nav.colordefondodelmenu .logo {
+  nav.Colordefondodelmenu .Logo {
     margin-bottom: 10px;
   }
-  main div.tab-content div.tab-pane section.imagenesinicio {
+  main div.tab-content div.tab-pane section.Imagenesinicio {
     height: 550px;
   }
-  header div h3 .tituloprincipal {
+  main header h3 {
     text-align: center;
+    font-size: 20px;
+    padding: 10px;
   }
-  .animacion {
-    display: none;
+  main header h3 .Tituloprincipal {
+    font-size: 24px;
   }
 }
 
-/*# sourceMappingURL=estilos.css.map */
+/*# sourceMappingURL=estilos.css%7B.map */
