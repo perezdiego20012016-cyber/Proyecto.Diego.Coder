@@ -80,7 +80,7 @@ main {
                 .tituloprincipal {
                     font-weight: bold;
                     font-size: 3rem;
-                    color: #dc3668; 
+                    color: #dc3668;
                 }
             }
         }
@@ -180,6 +180,27 @@ header {
                 }
             }
         }
+    }
+
+
+    .card-background {
+        background-size: cover;
+        background-position: center;
+        position: relative;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .card-background::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(0, 0, 0, 0.5);
+    }
+
+    .card-background .card-body {
+        position: relative;
+        z-index: 1;
     }
 }
 
@@ -284,6 +305,7 @@ main {
         height: auto;
         top: -150px;
         animation: bajar 12s linear infinite;
+
         &.izquierda {
             left: 20px;
         }
@@ -539,11 +561,7 @@ main {
         }
     }
 
-    .animacion {  
-    display: none;    
+    .animacion {
+        display: none;
+    }
 }
-}
-
-
-
-

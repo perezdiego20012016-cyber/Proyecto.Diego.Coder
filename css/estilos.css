@@ -132,6 +132,27 @@ header div.container div.row div.col-md-4 div.card div.card-body ul.unidadestien
   position: relative;
   z-index: 2;
 }
+header .card-background {
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  border-radius: 10px;
+  /* opcional */
+  overflow: hidden;
+  /* para que el overlay no se salga */
+}
+header .card-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  /* negro con 50% de opacidad */
+}
+header .card-background .card-body {
+  position: relative;
+  /* hace que el texto quede por encima del overlay */
+  z-index: 1;
+}
 
 main div.col div.card div.cardbody h5.subtitulos p.cardtextsobrenosotros {
   font-size: 1.2rem;
